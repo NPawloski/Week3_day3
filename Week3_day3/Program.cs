@@ -10,6 +10,19 @@ namespace Week3_day3
     {
         static void Main(string[] args)
         {
+
+            Vehicle Dinghy = new Vehicle(4, 500, "Red", 12.4);
+
+
+            Dinghy.Move();
+            Dinghy.Move();
+            Console.WriteLine(Dinghy.DistanceTraveled);
+            
+
+
+
+
+
         }
     }
 }

@@ -63,7 +63,10 @@ namespace Week3_day3
         }
 
 
-
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance traveled: " + distanceTraveled + "\n";
+        }
 
 
 

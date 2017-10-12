@@ -21,12 +21,23 @@ namespace Week3_day3
             Automobile Jane = new Automobile(4, 19, 5, 5, 1500, "Black", 100d);
             Jane.Move();
             Jane.Move();
-            Console.WriteLine("Car distance traveled " + Jane.DistanceTraveled );
+            Console.WriteLine("Car " + Jane.GetDistanceTraveled());
 
             Boat Boaty = new Boat(2, 500, "red", 88.0d, .9d);
             Boaty.Move();
             Boaty.Move();
-            Console.WriteLine("Boat distance traveled" + Boaty.DistanceTraveled);
+            Console.WriteLine("Boat " + Boaty.GetDistanceTraveled());
+
+
+            Aircraft aircraft1 = new Aircraft(70, 10000, "grey", 600);
+
+            aircraft1.Move();
+            aircraft1.Move();
+            Console.WriteLine("Aircraft " + aircraft1.GetDistanceTraveled());
+
+
+
+
 
 
 

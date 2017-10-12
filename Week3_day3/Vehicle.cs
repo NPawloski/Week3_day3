@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Week3_day3
 {
-    class Vehicle
+    abstract class Vehicle
     {
-        private int seats;
-        private int carryingCapacity;
-        private String color;
-        private double moveSpeed;
+        protected int seats;
+        protected int carryingCapacity;
+        protected String color;
+        protected double moveSpeed;
         private float gearRatio;
         private float engineSize;
-        private double distanceTraveled;
+        protected double distanceTraveled;
 
         public int Seats
         {
@@ -57,7 +57,7 @@ namespace Week3_day3
 
 
 
-        public void Move()
+        public virtual void Move()
         {
             distanceTraveled += moveSpeed;
         }
